@@ -11,15 +11,11 @@ for (const [index,item] of cardData.entries()) {
   const card = {
     id: item.id || index,
     title: item.title,
-    cover: item.cover || "",
     description: item.desc || "",
     url: item.url || "",
-    detail: item.detail || "",
     category: item.category || "other",
-    tag: item.tag || "",
     date: item.date || "",
     // mark: item.mark|| "",
-    index: index + 1,
   };
   cards.push(card);
 }
@@ -50,15 +46,15 @@ const count = cards.length;
                   <!--</div>-->
                   <div class="card-footer">
                       <div class="card-detail">
-                          <a href={card.detail ? card.detail :"javascript:void(0)"} target={card.detail ? "_blank":"_self"} class="card-name card-item__title">
+                          <a href={card.url ? card.url :"javascript:void(0)"} target={card.url ? "_blank":"_self"} class="card-name card-item__title">
                             {<span class="tag-original">标题</span>}   {card.title}
                           </a>
                           <div class="card-info">
                             {card.description}
                           </div>
                       </div>
-                     {card.url && <a href={card.url ? card.url : "javascript:void(0)" } class="card-link card-link__go js-gotip" target={card.url ? "_blank" : "_self"}>
-                      </a> }
+                     <!--{card.url && <a href={card.url ? card.url : "javascript:void(0)" } class="card-link card-link__go js-gotip" target={card.url ? "_blank" : "_self"}>-->
+                     <!-- </a> }-->
                   </div>
               </div>
               ))}
