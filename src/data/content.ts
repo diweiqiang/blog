@@ -20,13 +20,13 @@ export const nav: Nav = {
     items: [
         { label: '博客', href: '/', target: '_self' },// target 为 '_blank' 打开新链接
         // { label: '项目', href: '/project', target: '_self' },
-        { label: '关于', href: '/about', target: '_self' },
+        { label: '关于我', href: '/about', target: '_self' },
         // { label: '博客', href: '/blog', target: '_self' },
     ],
 };
 
 // Footer
-export const footerText = `© ${new Date().getFullYear()} Chenxi. All Rights Reserved.`
+export const footerText = `© ${new Date().getFullYear()} Weiqiang Di`
 
 //SEO TDK
 interface SeoTdk {
