@@ -30,28 +30,28 @@ const count = cards.length;
 <div class="section card">
     <div class="js-shuffle-sizer" >
         <div class="card-list my-shuffle-container" id="js-shuffle">
-            {cards.reverse().map((card) => (
+            {cards.map((card) => (
               <div class="card-item col-xs-1a col-md-2a col-lg-3a col-xxl-4a" data-groups={JSON.stringify(card.category)} data-date-created={card.date} data-title={card.title}>
-                  <div class="card-header">
-                      <div class="card-type type">
-                          <span class="type-tag">- {card.tag} - </span>
-                      </div>
-                      <div class="card-type type">
-                          <span class="type-tag">(0{card.index})</span>
-                      </div>
-                  </div>
-                  <div class="card-body">
-                      <a href={card.detail ? card.detail:"javascript:void(0)"} class="card-figure" target={card.detail ? "_blank":"_self"}>
-                        (<img class="card-figure__img lazy"
-                              src={card.cover} loading="lazy"
-                              alt="Loading Animations"
-                        >)
-                      </a>
-                  </div>
+                  <!--<div class="card-header">-->
+                  <!--    <div class="card-type type">-->
+                  <!--        <span class="type-tag">- {card.tag} - </span>-->
+                  <!--    </div>-->
+                  <!--    <div class="card-type type">-->
+                  <!--        <span class="type-tag">(0{card.index})</span>-->
+                  <!--    </div>-->
+                  <!--</div>-->
+                  <!--<div class="card-body">-->
+                  <!--    <a href={card.detail ? card.detail:"javascript:void(0)"} class="card-figure" target={card.detail ? "_blank":"_self"}>-->
+                  <!--      (<img class="card-figure__img lazy"-->
+                  <!--            src={card.cover} loading="lazy"-->
+                  <!--            alt="Loading Animations"-->
+                  <!--      >)-->
+                  <!--    </a>-->
+                  <!--</div>-->
                   <div class="card-footer">
                       <div class="card-detail">
                           <a href={card.detail ? card.detail :"javascript:void(0)"} target={card.detail ? "_blank":"_self"} class="card-name card-item__title">
-                            {card.mark && <span class="tag-original">推荐</span>}   {card.title}
+                            {<span class="tag-original">标题</span>}   {card.title}
                           </a>
                           <div class="card-info">
                             {card.description}

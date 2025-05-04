@@ -18,10 +18,10 @@ interface Nav {
 export const nav: Nav = {
 	avatar:'/assets/author.png',
     items: [
-        // { label: '首页', href: '/', target: '_self' },// target 为 '_blank' 打开新链接
+        { label: '博客', href: '/', target: '_self' },// target 为 '_blank' 打开新链接
         // { label: '项目', href: '/project', target: '_self' },
         { label: '关于', href: '/about', target: '_self' },
-        { label: '博客', href: '/blog', target: '_self' },
+        // { label: '博客', href: '/blog', target: '_self' },
     ],
 };
 
@@ -140,7 +140,7 @@ interface PageDescription {
 	about?: string
 }
 export const pageDescription: PageDescription = {
-	index: '我是陈熙，一个拥有超过5年经验的创意设计师和开发人员，在这里可以了解更多关于我的信息，或者阅读我的一些文章和笔记。',
+	index: '我是邸伟强，一个拥有超过多年经验的人工智能研究人员，在这里可以了解更多关于我的信息，或者阅读我的一些文章和笔记。',
 	project: "这是我的部分项目展示",
 	about: '专注于书籍分享、科技信息、AI大模型',
 	blog: '这是我的个人读书笔记， 希望你能够获得帮助！',
@@ -154,13 +154,13 @@ export interface FilterItem {
 	dataGroup: string
 }
 export const filterItems: FilterItem[] = [
-	{ content: "网页", dataGroup: "web" },
-	{ content: "UI", dataGroup: "ui" },
-	{ content: "三维", dataGroup: "3d" },
-	{ content: "摄影", dataGroup: "photography" },
-	{ content: "插画", dataGroup: "illustration" },
-	{ content: "品牌", dataGroup: "brand" },
-	{ content: "其他", dataGroup: "other" }
+	{ content: "独裁者手册", dataGroup: "Dictator" },
+	{ content: "夭折的上帝", dataGroup: "stillborn_god" },
+	// { content: "三维", dataGroup: "3d" },
+	// { content: "摄影", dataGroup: "photography" },
+	// { content: "插画", dataGroup: "illustration" },
+	// { content: "品牌", dataGroup: "brand" },
+	// { content: "其他", dataGroup: "other" }
 ];
 
 
