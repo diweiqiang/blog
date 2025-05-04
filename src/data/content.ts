@@ -36,7 +36,7 @@ interface SeoTdk {
 }
 // SEO TDK 首页
 export const homeTdk: SeoTdk = {
-	title: '这里是设计师陈熙的个人网站',
+	title: '邸伟强的个人网站',
 	description: '这是我的设计师陈熙部分项目展示',
 	keywords: '陈熙,博客'
 }
